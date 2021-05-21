@@ -1,0 +1,28 @@
+{
+    "name": "arabhossain/pory-logs",
+    "description": "Pory logs module",
+    "authors": [
+        {
+            "name": "Arab Hossain",
+            "email": "green.arab1995@gmail.com"
+        }
+    ],
+    "require": {
+        "spatie/laravel-activitylog": "^3.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pory\\Logs\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pory\\Logs\\ServiceProviders\\PoryLogsServiceProvider"
+            ],
+            "aliases": {
+                "PoryLogs":  "Pory\\Logs\\Facades\\PoryLogs"
+            }
+        }
+    }
+}
